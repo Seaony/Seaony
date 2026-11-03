@@ -24,7 +24,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=Seaony&show_icons=true&include_all_commits=true&hide_border=true&${{ env.LIGHT }}
+          options: username=Seaony&show_icons=true&include_all_commits=true&hide=contribs&hide_border=true&${{ env.LIGHT }}
           path: profile/stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,7 +32,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=Seaony&show_icons=true&include_all_commits=true&hide_border=true&${{ env.DARK }}
+          options: username=Seaony&show_icons=true&include_all_commits=true&hide=contribs&hide_border=true&${{ env.DARK }}
           path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
