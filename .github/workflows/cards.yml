@@ -1,0 +1,125 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    # 浅色、深色两套配色，跟 README 顶部横幅保持一致
+    env:
+      LIGHT: bg_color=ffffff&title_color=111111&text_color=525252&icon_color=FA7343&ring_color=FA7343&border_color=e5e5e5
+      DARK: bg_color=0d1117&title_color=f5f5f5&text_color=a3a3a3&icon_color=FA7343&ring_color=FA7343&border_color=30363d
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Stats (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=Seaony&show_icons=true&include_all_commits=true&hide_border=true&${{ env.LIGHT }}
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Stats (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=Seaony&show_icons=true&include_all_commits=true&hide_border=true&${{ env.DARK }}
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Top languages (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=Seaony&layout=compact&langs_count=6&hide_border=true&${{ env.LIGHT }}
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Top languages (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=Seaony&layout=compact&langs_count=6&hide_border=true&${{ env.DARK }}
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Yomi (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=Yomi&${{ env.LIGHT }}
+          path: profile/pin-yomi-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Yomi (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=Yomi&${{ env.DARK }}
+          path: profile/pin-yomi-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Momento (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=Momento&${{ env.LIGHT }}
+          path: profile/pin-momento-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Momento (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=Momento&${{ env.DARK }}
+          path: profile/pin-momento-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Moni (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=Moni&${{ env.LIGHT }}
+          path: profile/pin-moni-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Moni (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=Moni&${{ env.DARK }}
+          path: profile/pin-moni-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin china-city-subway (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=china-city-subway&${{ env.LIGHT }}
+          path: profile/pin-china-city-subway-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin china-city-subway (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Seaony&repo=china-city-subway&${{ env.DARK }}
+          path: profile/pin-china-city-subway-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
