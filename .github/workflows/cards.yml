@@ -56,7 +56,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=Yomi&${{ env.LIGHT }}
+          options: username=Seaony&repo=Yomi&description_lines_count=2&${{ env.LIGHT }}
           path: profile/pin-yomi-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -64,7 +64,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=Yomi&${{ env.DARK }}
+          options: username=Seaony&repo=Yomi&description_lines_count=2&${{ env.DARK }}
           path: profile/pin-yomi-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -72,7 +72,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=Momento&${{ env.LIGHT }}
+          options: username=Seaony&repo=Momento&description_lines_count=2&${{ env.LIGHT }}
           path: profile/pin-momento-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -80,7 +80,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=Momento&${{ env.DARK }}
+          options: username=Seaony&repo=Momento&description_lines_count=2&${{ env.DARK }}
           path: profile/pin-momento-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -88,7 +88,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=Moni&${{ env.LIGHT }}
+          options: username=Seaony&repo=Moni&description_lines_count=2&${{ env.LIGHT }}
           path: profile/pin-moni-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -96,7 +96,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=Moni&${{ env.DARK }}
+          options: username=Seaony&repo=Moni&description_lines_count=2&${{ env.DARK }}
           path: profile/pin-moni-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -104,7 +104,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=china-city-subway&${{ env.LIGHT }}
+          options: username=Seaony&repo=china-city-subway&description_lines_count=2&${{ env.LIGHT }}
           path: profile/pin-china-city-subway-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -112,7 +112,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Seaony&repo=china-city-subway&${{ env.DARK }}
+          options: username=Seaony&repo=china-city-subway&description_lines_count=2&${{ env.DARK }}
           path: profile/pin-china-city-subway-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 

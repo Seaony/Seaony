@@ -35,27 +35,7 @@ I'm a full-stack developer from Hangzhou, China 🇨🇳
 #### Top Repositories
 
 
-<a href="https://github.com/Seaony/Yomi">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-yomi-dark.svg" />
-    <img align="center" alt="Yomi" src="./profile/pin-yomi-light.svg" />
-  </picture>
-</a>
-<a href="https://github.com/Seaony/Momento">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-momento-dark.svg" />
-    <img align="center" alt="Momento" src="./profile/pin-momento-light.svg" />
-  </picture>
-</a>
-<a href="https://github.com/Seaony/Moni">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-moni-dark.svg" />
-    <img align="center" alt="Moni" src="./profile/pin-moni-light.svg" />
-  </picture>
-</a>
-<a href="https://github.com/Seaony/china-city-subway">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-china-city-subway-dark.svg" />
-    <img align="center" alt="china-city-subway" src="./profile/pin-china-city-subway-light.svg" />
-  </picture>
-</a>
+<a href="https://github.com/Seaony/Yomi"><picture><source media="(prefers-color-scheme: dark)" srcset="./profile/pin-yomi-dark.svg" /><img align="center" alt="Yomi" src="./profile/pin-yomi-light.svg" /></picture></a>
+<a href="https://github.com/Seaony/Momento"><picture><source media="(prefers-color-scheme: dark)" srcset="./profile/pin-momento-dark.svg" /><img align="center" alt="Momento" src="./profile/pin-momento-light.svg" /></picture></a>
+<a href="https://github.com/Seaony/Moni"><picture><source media="(prefers-color-scheme: dark)" srcset="./profile/pin-moni-dark.svg" /><img align="center" alt="Moni" src="./profile/pin-moni-light.svg" /></picture></a>
+<a href="https://github.com/Seaony/china-city-subway"><picture><source media="(prefers-color-scheme: dark)" srcset="./profile/pin-china-city-subway-dark.svg" /><img align="center" alt="china-city-subway" src="./profile/pin-china-city-subway-light.svg" /></picture></a>
